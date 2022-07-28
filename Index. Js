@@ -1,1 +1,384 @@
 
+//1
+
+/*
+function multiply(a, b){
+    return a * b;
+  }
+  */
+
+
+//2
+
+/*
+  function getPlanetName(id){
+    var name;
+    switch(id){
+      case 1:
+        name = 'Mercury'
+        break;
+      case 2:
+        name = 'Venus'
+        break;
+      case 3:
+        name = 'Earth'
+        break;
+      case 4:
+        name = 'Mars'
+        break;
+      case 5:
+        name = 'Jupiter'
+        break;
+      case 6:
+        name = 'Saturn'
+        break;
+      case 7:
+        name = 'Uranus'
+        break;
+      case 8:
+        name = 'Neptune'
+        break;
+    }
+    return name;
+  }
+*/
+
+
+//3
+
+/*
+function solution(str){
+    return str.split("").reverse("").join("");
+  }
+*/
+
+//4 
+
+/*
+function even_or_odd(number) {
+    if(number % 2 === 0){
+      return 'Even';
+    } else{
+      return 'Odd';
+    }
+    
+  }
+*/
+
+
+//5
+
+/*
+function countSheeps(arrayOfSheep) {
+    return arrayOfSheep.filter(Boolean).length;
+  }
+*/
+
+//6
+
+/*
+function getCount(str) {
+    let vowelsCount = 0;
+    
+    const arr = str.split("");
+    
+    for (let i = 0; i<arr.length; i++){
+      switch(arr[i]){
+          case 'a':
+            vowelsCount++;
+            break;
+          case 'e':
+            vowelsCount++;
+            break;
+          case 'i':
+            vowelsCount++;
+            break;
+          case 'o':
+            vowelsCount++;
+            break;
+          case 'u':
+            vowelsCount++;
+      }
+    }
+    return vowelsCount;
+  }
+*/
+
+//7
+
+/*
+function greet(name){
+  
+    if(name === "Johnny"){
+      return "Hello, my love!";
+      }
+    
+    return "Hello, "+name + "!";
+  }
+*/
+
+//8
+
+/*
+function isDivisible(n, x, y) {
+  
+    const result1 = n/x;
+    const result2 = n/y;
+    
+    if(result1 % 1 === 0 && result2 % 1 === 0){
+      return true;
+    }else {
+      return false;
+    }
+  }
+*/
+
+//9
+
+/*
+function makeNegative(num) {
+    if(num < 0){
+      return num;
+    }else {
+      return num * -1;
+    }
+  }
+*/
+
+//10
+
+/*
+class SmallestIntegerFinder {
+    findSmallestInt(arrayOfNumbers) {
+      let smallestNumber;
+      
+      for (let i=0; i < arrayOfNumbers.length; i++){
+        const arrNumber = arrayOfNumbers[i];
+        
+        if(i === 0){
+          smallestNumber = arrNumber;
+        }
+        if (arrNumber < smallestNumber){
+          smallestNumber = arrNumber;
+        }
+      }
+      return smallestNumber;
+    }
+  }
+*/
+
+//11
+
+/*
+var summation = function (num) {
+  
+    let sum = 0;
+    
+    for(let i=1; i<=num; i++){
+      sum = sum + i;
+    }
+    return sum;
+  }
+*/
+
+//12
+
+/*
+function getAverage(marks){
+    const count = marks.length;
+    let sum = 0;
+    
+    for (let i = 0; i < count; i++){
+      sum = sum + marks[i];
+    }
+    const avg = sum / count;
+    const roundedDown = Math.floor(avg);
+    
+    return roundedDown;
+  }
+*/
+
+//13
+
+/*
+const rps = (p1, p2) => {
+  if(p1 === p2) return "Draw!";
+  var rules = {rock: "scissors", paper: "rock", scissors: "paper"};
+  if(p2 === rules[p1]){
+    return "Player 1 won!";
+  }
+  else{
+    return "Player 2 won!";
+  }
+};
+*/
+
+//14
+
+/*
+function removeChar(str){
+    return str.slice(1, str.length -1);
+   
+   };
+*/
+
+
+//15
+
+/*
+function positiveSum(arr) {
+  
+    let sum = 0;
+    
+    for(let i=0; i<arr.length; i++){
+      if(arr[i] > 0){
+        sum = sum +arr[i];
+      }
+    }
+    return sum;
+  }
+*/
+
+//16
+
+/*
+function basicOp(operation, value1, value2)
+{
+  let result;
+  
+  switch(operation){
+      case '+':
+      result = value1 + value2;
+      break;
+      case '-':
+      result = value1 - value2;
+      break;
+      case '*':
+      result = value1 * value2;
+      break;
+      case '/':
+      result = value1 / value2;
+      break;
+  }
+  return result;
+}
+*/
+
+//17
+
+/*
+function stringToArray(string){
+    return string.split(" ");
+}
+*/
+
+//18
+
+/*
+function noSpace(x){
+    const arr = x.split(" ");
+    
+    let newArray = [];
+    
+    for(let i = 0; i < arr.length; i++){
+      const trimmedx = arr[i].trim();
+      newArray.push(trimmedx);
+    }
+    const finalx = newArray.join("");
+    return finalx;
+  }
+*/
+
+//19
+
+/*
+function maps(x){
+    const result = x.map((xItem) => {
+      return xItem * 2;
+    });
+    
+    return result;
+  
+  }
+*/
+
+//20
+
+/*
+function hero(bullets, dragons){
+    return bullets / dragons >= 2;
+ }
+*/
+
+//21
+
+/*
+function arrayPlusArray(arr1, arr2) {
+    let sum  = 0;
+    
+    for(let i = 0; i < arr1.length; i++){
+      const arr1Value = arr1[i];
+      const arr2Value = arr2[i];
+      
+      const addedValue = arr1Value + arr2Value;
+      
+      sum = sum + addedValue;
+    }
+    return sum;
+  }
+*/
+
+//22
+
+/*
+function century(year) {
+    return Math.ceil(year / 100); 
+  }
+*/
+
+//23
+
+/*
+var humanYearsCatYearsDogYears = function(humanYears) {
+   
+    let catsAge;
+    let dogsAge;
+    
+    if(humanYears === 1){
+      return [humanYears, 15, 15];
+    }
+    if(humanYears === 2){
+      return [humanYears, 24, 24];
+    }
+    
+    const excessYears = humanYears - 2;
+    const extraCatYears = excessYears * 4;
+    const extraDogYears = excessYears * 5;
+    
+    return [humanYears, 24 + extraCatYears, 24 + extraDogYears];
+  }
+*/
+
+//24
+
+/*
+function points(games) {
+    let totalPoints = 0;
+    
+    for(let i = 0; i < games.length; i++){
+      const value = games[i];
+      
+      const parts = value.split(":");
+      
+      const x = parts[0];
+      const y = parts[1];
+      
+      if(x > y){
+        totalPoints = totalPoints + 3;
+      }else if(x === y){
+        totalPoints += 1;
+      }
+    }
+    return totalPoints;
+  }
+*/
